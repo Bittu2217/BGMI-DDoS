@@ -202,7 +202,7 @@ def handle_message(message):
         bot.reply_to(message, "**", parse_mode='Markdown')
     elif message.text == "Attack":
         attack_command(message)
-    elif message.text == "My Account 🏦":
+    elif message.text in ["My Account 🏦", "/myinfo"]:
         user_id = message.from_user.username
         user_data = users_collection.find_one({"user_id": user_id})
         if user_data:
