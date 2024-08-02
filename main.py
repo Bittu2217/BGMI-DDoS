@@ -23,6 +23,7 @@ users_collection = db.users_new
 bot = telebot.TeleBot(TOKEN)
 REQUEST_INTERVAL = 1
 
+admins = ['IRFANSARI0']
 blocked_ports = [8700, 20000, 443, 17500, 9031, 20002, 20001]  # Blocked ports list
 
 async def start_asyncio_thread():
@@ -81,7 +82,7 @@ async def run_attack_command_async(target_ip, target_port, duration):
 
 def is_user_admin(user_id):
     try:
-        return user_id in ['IRFANSARI0']
+        return user_id in admins
     except:
         return False
 
