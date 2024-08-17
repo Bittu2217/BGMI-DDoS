@@ -10,9 +10,9 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
 loop = asyncio.get_event_loop()
 
-TOKEN = '7413939340:AAHF0QYMvYbZoa5ww38iVIKbpU9-BXdYlVg'
+TOKEN = '7508241958:AAFNvdYEchufmqPbDZkuPgwv0vqsUQZ7c-E'
 MONGO_URI = 'mongodb+srv://piroop:piroop@piro.hexrg9w.mongodb.net/?retryWrites=true&w=majority&appName=piro&tlsAllowInvalidCertificates=true'
-CHANNEL_ID = -1002159583778
+CHANNEL_ID = -6595944212
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
